@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+
+
 
 class ViewController: UIViewController {
 
@@ -14,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+var nome = ""
 
 }
 

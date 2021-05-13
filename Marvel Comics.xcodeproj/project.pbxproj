@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		B8DDEEDC264D5734005CEDB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DDEEDA264D5734005CEDB8 /* Main.storyboard */; };
 		B8DDEEDE264D5743005CEDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DDEEDD264D5743005CEDB8 /* Assets.xcassets */; };
 		B8DDEEE1264D5743005CEDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8DDEEDF264D5743005CEDB8 /* LaunchScreen.storyboard */; };
+		B8DDEEEA264D7B43005CEDB8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B8DDEEE9264D7B43005CEDB8 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DDEEEA264D7B43005CEDB8 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Marvel Comics";
+			packageProductDependencies = (
+				B8DDEEE9264D7B43005CEDB8 /* Alamofire */,
+			);
 			productName = "Marvel Comics";
 			productReference = B8DDEED1264D5733005CEDB8 /* Marvel Comics.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = B8DDEEC8264D5733005CEDB8;
+			packageReferences = (
+				B8DDEEE8264D7B42005CEDB8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B8DDEED2264D5733005CEDB8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8DDEEE8264D7B42005CEDB8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8DDEEE9264D7B43005CEDB8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8DDEEE8264D7B42005CEDB8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8DDEEC9264D5733005CEDB8 /* Project object */;
 }
