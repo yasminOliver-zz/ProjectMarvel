@@ -7,9 +7,11 @@
 //
 
 import UIKit
-import CryptoSwift
+import CryptoKit
 
 class ViewController: UIViewController {
+    
+        var apiRequest = Service()
     
         override func viewDidLoad() {
             super.viewDidLoad()
