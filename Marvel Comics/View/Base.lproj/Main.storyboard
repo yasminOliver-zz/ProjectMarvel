@@ -37,9 +37,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcJ-ef-vB9">
                                 <rect key="frame" x="0.0" y="96" width="375" height="208"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMH-qs-EEO">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome (inglês)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMH-qs-EEO">
                                         <rect key="frame" x="28" y="93" width="319" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWs-Up-pHr">
@@ -86,6 +86,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="oAl-e4-LZX"/>
                     <connections>
+                        <outlet property="tfName" destination="gMH-qs-EEO" id="Ko4-8y-8Ar"/>
                         <segue destination="cWg-yg-eLa" kind="show" id="29o-1b-DMv"/>
                     </connections>
                 </viewController>
@@ -96,7 +97,7 @@
         <!--Heróis Marvel-->
         <scene sceneID="DJk-Qb-uBa">
             <objects>
-                <tableViewController id="cWg-yg-eLa" userLabel="Heróis Marvel" sceneMemberID="viewController">
+                <tableViewController id="cWg-yg-eLa" userLabel="Heróis Marvel" customClass="HeroesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ClM-p3-yZ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,6 +197,10 @@
                         <viewLayoutGuide key="safeArea" id="KjR-cQ-93X"/>
                     </view>
                     <navigationItem key="navigationItem" id="DuB-6Q-ulS"/>
+                    <connections>
+                        <outlet property="loading" destination="Jxy-Yj-yGa" id="fAI-No-CX2"/>
+                        <outlet property="webView" destination="Bcg-uc-HVE" id="U63-zH-Mys"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCB-Ri-v8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

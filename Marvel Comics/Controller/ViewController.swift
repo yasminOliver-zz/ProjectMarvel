@@ -2,20 +2,16 @@
 //  ViewController.swift
 //  Marvel Comics
 //
-//  Created by Yasmin Oliveira on 13/05/21.
+//  Created by Cassia Franco on 18/05/21.
 //  Copyright © 2021 Yasmin Oliveira. All rights reserved.
 //
 
 import UIKit
-import CryptoKit
-import WebKit
 
-class HeroViewController: UIViewController {
+
+class ViewController: UIViewController {
     
-    @IBOutlet weak var webView: WKWebView!
-    
-    @IBOutlet weak var loading: UIActivityIndicatorView!
-    var apiRequest = Service()
+    @IBOutlet weak var tfName: UITextField!
     
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -24,5 +20,3 @@ class HeroViewController: UIViewController {
         }
 
     }
-
-

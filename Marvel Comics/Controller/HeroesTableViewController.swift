@@ -6,4 +6,13 @@
 //  Copyright © 2021 Yasmin Oliveira. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class HeroesTableViewController: ViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    
+}
