@@ -11,6 +11,7 @@
 		3604A782264EEBAF009AC13C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604A781264EEBAF009AC13C /* Service.swift */; };
 		3604A78D264F1496009AC13C /* MarvelCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604A78C264F1496009AC13C /* MarvelCharacter.swift */; };
 		3615A34B265436CC009EF381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3615A34A265436CB009EF381 /* ViewController.swift */; };
+		363AEEAD2655622100807463 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363AEEAC2655622100807463 /* HeroTableViewCell.swift */; };
 		7544DD7D8C6E2349C708C4E6 /* Pods_Marvel_Comics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93711C21BF2132C36D09B345 /* Pods_Marvel_Comics.framework */; };
 		B8DDEED5264D5734005CEDB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DDEED4264D5734005CEDB8 /* AppDelegate.swift */; };
 		B8DDEED7264D5734005CEDB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DDEED6264D5734005CEDB8 /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 		3604A781264EEBAF009AC13C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		3604A78C264F1496009AC13C /* MarvelCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCharacter.swift; sourceTree = "<group>"; };
 		3615A34A265436CB009EF381 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		363AEEAC2655622100807463 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeroTableViewCell.swift; path = ../HeroTableViewCell.swift; sourceTree = "<group>"; };
 		459D57C77EB9F2B1DEBF0397 /* Pods-Marvel Comics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel Comics.release.xcconfig"; path = "Target Support Files/Pods-Marvel Comics/Pods-Marvel Comics.release.xcconfig"; sourceTree = "<group>"; };
 		712375E1E1747BBCEFA0BF0F /* Pods-Marvel Comics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel Comics.debug.xcconfig"; path = "Target Support Files/Pods-Marvel Comics/Pods-Marvel Comics.debug.xcconfig"; sourceTree = "<group>"; };
 		93711C21BF2132C36D09B345 /* Pods_Marvel_Comics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Comics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,9 +63,10 @@
 		3604A785264EEC4D009AC13C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				363AEEAC2655622100807463 /* HeroTableViewCell.swift */,
 				3615A34A265436CB009EF381 /* ViewController.swift */,
-				36004D6F26518A41002C3A52 /* HeroesTableViewController.swift */,
 				B8DDEED8264D5734005CEDB8 /* HeroViewController.swift */,
+				36004D6F26518A41002C3A52 /* HeroesTableViewController.swift */,
 				3604A787264EEC99009AC13C /* Misc */,
 			);
 			path = Controller;
@@ -261,6 +264,7 @@
 				3604A78D264F1496009AC13C /* MarvelCharacter.swift in Sources */,
 				B8DDEED9264D5734005CEDB8 /* HeroViewController.swift in Sources */,
 				B8DDEED5264D5734005CEDB8 /* AppDelegate.swift in Sources */,
+				363AEEAD2655622100807463 /* HeroTableViewCell.swift in Sources */,
 				3604A782264EEBAF009AC13C /* Service.swift in Sources */,
 				3615A34B265436CC009EF381 /* ViewController.swift in Sources */,
 				B8DDEED7264D5734005CEDB8 /* SceneDelegate.swift in Sources */,
@@ -419,6 +423,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64  armv7 armv7s";
+				"VALID_ARCHS[sdk=*]" = "arm64  armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -437,6 +443,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64  armv7 armv7s";
 			};
 			name = Release;
 		};

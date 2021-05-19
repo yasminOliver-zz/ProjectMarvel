@@ -15,11 +15,10 @@ class HeroViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     
     @IBOutlet weak var loading: UIActivityIndicatorView!
-    var apiRequest = Service()
+
     
         override func viewDidLoad() {
             super.viewDidLoad()
-            // Do any additional setup after loading the view.
             
         }
 
