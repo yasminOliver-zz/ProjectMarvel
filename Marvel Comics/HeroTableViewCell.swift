@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import kingfisher
+
 
 class HeroTableViewCell: UITableViewCell{
     
