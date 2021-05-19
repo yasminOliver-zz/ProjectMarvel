@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Marvel Comics
 //
-//  Created by Yasmin Oliveira on 13/05/21.
-//  Copyright © 2021 Yasmin Oliveira. All rights reserved.
+//  Created by Everton Dias on 13/05/21.
+//  Copyright © 2021 Everton Dias. All rights reserved.
 //
 
 import UIKit
