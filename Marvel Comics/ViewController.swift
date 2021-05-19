@@ -7,16 +7,19 @@
 //
 
 import UIKit
-import Alamofire
-
-
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tfName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-var nome = ""
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
 
 }
 
