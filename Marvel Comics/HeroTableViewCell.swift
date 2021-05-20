@@ -36,6 +36,11 @@ class HeroTableViewCell: UITableViewCell{
         } else{
             ivThumb.image = nil
         }
+        
+        ivThumb.layer.cornerRadius = ivThumb.frame.size.height/2
+        ivThumb.layer.borderColor = UIColor.red.cgColor
+        ivThumb.layer.borderWidth = 2
+        
     }
     
 }
