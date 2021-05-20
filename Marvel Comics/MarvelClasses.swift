@@ -28,7 +28,7 @@ struct Hero: Codable {
     let name: String
     let description: String
     let thumbnail: Thumbnail
-    let url: [HeroURL]
+    let urls: [HeroURL]
 
 }
 
@@ -36,7 +36,12 @@ struct Thumbnail: Codable {
     let path: String
     let ext: String
     
-    enum codinkeys: String, CodingKey {
+    var url: String {
+        return path + "." + ext
+    }
+    
+    
+    enum codingkeys: String, CodingKey {
         case path
         case ext = "extension"
     }

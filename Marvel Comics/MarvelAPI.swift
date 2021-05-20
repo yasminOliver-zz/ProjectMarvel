@@ -26,6 +26,7 @@ class MarvelAPI {
         startswith = ""
        }
         let url = basePath + "offset=\(offset)&limit=\(limit)&" + startswith + getCredentials()
+        
         AF.request(url).responseJSON { (response) in
                 guard let data = response.data,
                       let marvelInfo = try? JSONDecoder().decode(MarvelInfo.self, from:data),
@@ -33,7 +34,7 @@ class MarvelAPI {
                     onComplete(nil)
                     return
                 }
-                onComplete(MarvelInfo)
+                onComplete(marvelInfo)
                 }
     
     }
