@@ -3,7 +3,7 @@
 //  Marvel Comics
 //
 //  Created by user191958 on 5/13/21.
-//  Copyright © 2021 Yasmin Oliveira. All rights reserved.
+//  Copyright © 2021 Everton Dias. All rights reserved.
 //
 
 import Foundation
@@ -30,13 +30,19 @@ class ApiService{
         print(url)
         
         AF.request(url).responseJSON { (response) in
-        guard let data = response.data,
-              let marvelInfo = try? JSONDecoder().decode(MarvelInfo.self, from:data),
-              marvelInfo.code == 200 else {
-            onComplete(nil)
-            return
+            guard let data = response.data else {
+                onComplete(nil)
+                return
+                }
+            do {
+                let marvelInfo = try JSONDecoder().decode(MarvelInfo.self, from:data)
+                onComplete(marvelInfo)
+            } catch {
+                print(error.localizedDescription)
+                onComplete(nil)
         }
-        onComplete(MarvelInfo)
+            
+        
         }
     }
     

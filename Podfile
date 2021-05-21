@@ -6,8 +6,9 @@ target 'Marvel Comics' do
   use_frameworks!
 
   # Pods for Marvel Comics
-    pod 'Alamofire', '~> 5.4'
     pod 'Kingfisher', '~> 6.0'
+    pod 'Alamofire', '~> 5.4'
     pod 'SwiftHash'
+
 
 end
